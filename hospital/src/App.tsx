@@ -2,6 +2,7 @@ import { Grid, GridItem, Show } from "@chakra-ui/react";
 import NavBar from "./component/NavBar";
 import GameGrid from "./component/GameGrid";
 import GenreList from "./component/GenreList";
+import PlatformSelector from "./component/PlatformSelector";
 function App() {
   const newLocal = "aside";
   return (
@@ -20,6 +21,7 @@ function App() {
       </Show>
 
       <GridItem area="main">
+        <PlatformSelector/>
         <GameGrid />
       </GridItem>
     </Grid>
