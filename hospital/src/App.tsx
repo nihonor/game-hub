@@ -38,7 +38,7 @@ function App() {
       </Show>
 
       <GridItem area="main">
-        <Box paddingLeft={2}>
+        <Box paddingLeft={2} marginBottom={2}>
         <GameHeading gameQuery={gameQuery}/>
         <PlatformSelector
           selectedPlatform={gameQuery.platform}
@@ -47,10 +47,12 @@ function App() {
           }
         />
         <SortSelector
+       
           sortOrder={gameQuery.sortOrder}
           onSelectSortOrder={(sortOrder) =>
             setGameQuery({ ...gameQuery, sortOrder })
           }
+        
         />
         </Box>
         
